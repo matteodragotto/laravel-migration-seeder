@@ -7,6 +7,11 @@
 
   @vite(['resources/sass/app.scss', "resources/js/app.js"])
 
+  {{-- Google Fonts --}}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
   <title>@yield('title')</title>
 </head>
 <body>

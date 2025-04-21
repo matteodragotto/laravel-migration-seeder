@@ -6,3 +6,26 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+body {
+  font-family: "Share Tech Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+}
+
+
+header {
+  background-color: #F07E35;
+}
+
+.table tbody tr {
+  background-color: black !important;
+  --bs-table-bg: black !important;
+  --bs-table-color: #F07E35 !important;
+}
+
+.table thead tr {
+  background-color: #F07E35 !important;
+  --bs-table-bg: #F07E35 !important;
+}
