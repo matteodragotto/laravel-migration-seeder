@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('train_code', length: 100);
             $table->smallInteger('train_carriage_number');
             $table->boolean('on_time');
-            $table->boolean('late');
+            $table->boolean('cancelled');
             $table->timestamps();
         });
     }

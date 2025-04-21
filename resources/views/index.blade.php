@@ -18,7 +18,7 @@
         <th scope="col">ORARIO DI ARRIVO</th>
         <th scope="col">NUMERO CARROZZE</th>
         <th scope="col">IN ORARIO</th>
-        <th scope="col">IN RITARDO</th>
+        <th scope="col">CANCELLATO</th>
       </tr>
     </thead>
     <tbody>
@@ -31,8 +31,8 @@
       <td>{{strtoupper($train['departure_time'])}}</td>
       <td>{{strtoupper($train['arrival_time'])}}</td>
       <td>{{strtoupper($train['train_carriage_number'])}}</td>
-      <td>{{strtoupper($train['on_time'])}}</td>      
-      <td>{{strtoupper($train['late'])}}</td>      
+      <td>{{strtoupper($train['on_time'] ? 'Si' : 'No')}}</td>      
+      <td>{{strtoupper($train['cancelled'] ? 'Si' : 'No')}}</td>      
     </tr>
     @endforeach
     </tbody>

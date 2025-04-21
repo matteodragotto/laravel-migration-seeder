@@ -22,12 +22,12 @@ class TrainsTableSeeder extends Seeder
             $newTrain->company = $faker->company;
             $newTrain->departure_station = $faker->city;
             $newTrain->arrival_station = $faker->city;
-            $newTrain->departure_time = $faker->dateTimeBetween('now', '+1 week')->format('Y-m-d H:i:s');
-            $newTrain->arrival_time = $faker->dateTimeBetween('+1 hour', '+1 week')->format('Y-m-d H:i:s');
-            $newTrain->train_code = $faker->bothify(strtoupper('??####'));
+            $newTrain->departure_time = $faker->dateTimeBetween('now', '+1 day')->format('Y-m-d H:i:s');
+            $newTrain->arrival_time = $faker->dateTimeBetween('+1 hour', '+1 day')->format('Y-m-d H:i:s');
+            $newTrain->train_code = $faker->bothify(strtoupper('??###'));
             $newTrain->train_carriage_number = $faker->randomNumber(2, false);
-            $newTrain->on_time = $faker->boolean(0.5);
-            $newTrain->late = $faker->boolean(0.5);
+            $newTrain->on_time = $faker->boolean;
+            $newTrain->cancelled = $faker->boolean;
 
             $newTrain->save();
         }
